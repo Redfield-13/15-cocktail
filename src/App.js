@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useContext} from 'react'
+import Landing from './components/landing'
+import Detail from './components/detail'
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+
+const drinkContext = React.createContext()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <drinkContext.Provider value='hello'>
+      <Router className="App">   
+      <Routes>          
+          <Route path="/" element={<Landing></Landing>}></Route>
+          <Route path="/detail" element={<Detail></Detail>}></Route>
+        </Routes>
+    </Router>
+    </drinkContext.Provider>
+    
+  )
 }
 
 export default App;

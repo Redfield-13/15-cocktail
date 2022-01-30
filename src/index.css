@@ -1,13 +1,316 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    box-sizing: border-box;
+  background-color: #f1f5f8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  width: 100%;
+  height: 80px;
+  box-shadow: 1px 1px black;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  box-shadow:  2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
+.nav{
+  width: 86.325%;
+  height: 34px;
+  margin-left: 6.8375%;
+  display: inline;
+}
+
+.right{
+  float: right;
+  display: flex;
+  font-size: 19.2px;
+  margin: 0 8px 0 0;
+  padding: 4px 8px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+a{
+  text-decoration: none;
+  color: #222222;
+  font-size: 19.2px;
+  margin: 0 8px 0 0;
+  padding: 4px 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right:hover{
+  transition:  #476a2e;
+  color:  #476a2e;
+}
+
+.search{
+  width: 29.2%;
+  margin-left: 33.3%;
+  height: 80px!important;
+  background-color: #ffffff;
+  margin-top: 96px;
+  padding: 32px 40px;
+  border-radius: 4px;
+  box-shadow:  2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 80px;
+}
+
+label{
+  height: 22px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #476a2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.25rem;
+  display: block;
+}
+
+input{
+  width: 97.1%;
+  background-color: #f1f5f8;
+  height:22px;
+  border: none;
+  padding: 8px;
+  font-size: 18.3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.cocktails{
+  align-items: center;
+  text-align: center;
+}
+
+.title{
+  font-size: 32px;
+  color: #222222;
+  margin-bottom: 56px;
+  margin-top: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+
+}
+
+.wrapper{
+  display: grid;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: fit-content;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0 auto;
+}
+
+.drink{
+  width: 370px;
+  height: 500px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow:  2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.drink-img{
+  width: 100%;
+  height: 320px;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.drink-info{
+  width: 87.03%;
+  height: 132px;
+  margin-top: 0;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.name{
+  font-size: 32px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 5px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  margin-top: 0;
+  letter-spacing: 5px;
+}
+
+
+.glass{
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 5px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  margin-top: 0;
+  letter-spacing: 5px;
+}
+.alco{
+  font-size: 16px;
+  color: #afafaf;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  margin-top: 0;
+}
+
+.details{
+  background-color: #476a2e;
+  width: 98px;
+  height: 29px;
+  padding: 4px 6px;
+  border: none;
+  color: #ffffff;
+  float: left;
+  border-radius: 3px;
+  font-size: 13px;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .5s;
+  transition: background-color .5s;
+}
+
+.details:hover{
+
+  background-color: #d4e6a5;
+  color: #476a2e;
+}
+
+.drink-detail{
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.detailss{
+  background-color: #476a2e;
+  color: #ffffff;
+  border: none;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .5s;
+  transition: background-color .5s;
+  border-radius: 3px;
+  padding: 4px 6px;
+  width: 144px;
+  height: 35px;
+}
+
+.detailss:hover{
+
+  background-color: #d4e6a5;
+  color: #476a2e;
+}
+
+.detail-title{
+  font-size: 32px;
+  color: #222222;
+  margin-top: 16px;
+  margin-bottom: 56px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 5px;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: 448px 1fr ;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  margin: 0 auto;
+  grid-gap: 3rem;
+}
+
+.info img{
+  width: 448px;
+  height: 448px;
+  border-radius: 3px;
+}
+
+.tell{
+  width: 548px;
+  height: 346px;
+  border-radius: 3px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+
+}
+
+.first{ 
+text-align: left;
+margin-bottom: 20px;
+min-height: 28px;
+display: block;
+}
+
+.first span{
+  font-size: 16px;
+  color: #222222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.green{
+  background-color: #d4e6a5;
+  color: #476a2e!important;
+  margin-right: 8px;
+  padding: 4px 8px;
+}
+
+/********************************************** MOBILE  *************************************/
+@media screen and (max-width: 500px){
+  .search{
+    width: 65.0%;
+    margin: auto;
+    margin-top: 96px;
+  }
+
+  h2.title{
+    margin-top: 80px;
+  }
+
+  .wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .name,.glass,.alco,.details{
+    text-align: center;
+    float: none;
+  }
+
+  .drink{
+    width: 90%;
+    margin: auto;
+  }
+
+  .info{
+    grid-template-columns: 375px;
+  }
+  .info img{
+    width: 85%;
+    margin: auto;
+  }
+  .tell{
+    width: 97%;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+}
+
+
