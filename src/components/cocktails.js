@@ -40,7 +40,11 @@ function Cocktails() {
                     }}/>
                 </form>
             </div>
-            <h2 className='title'>{loading ?"Loading...":"Cocktails"}</h2>
+            <h2 className='title'>{loading ?<div className="loader">
+                    <div className="circle one"></div>
+                    <div className="circle two"></div>
+                    <div className="circle three"></div>
+            </div>:"Cocktails"}</h2>
             <div className="wrapper">
             
                 {

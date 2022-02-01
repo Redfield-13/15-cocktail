@@ -17,7 +17,11 @@ let found = {}
         
         <div>
             <Navbar></Navbar>
-            {loading?<h2>Loading...</h2>:
+            {loading?<div className="loader">
+                    <div className="circle one"></div>
+                    <div className="circle two"></div>
+                    <div className="circle three"></div>
+            </div>:
                 <div className="drink-detail">
                 <Link exact to="/">
                 <button className='detailss'>Back Home</button>
