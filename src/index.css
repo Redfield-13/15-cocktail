@@ -317,6 +317,11 @@ display: block;
     padding-left: 10px;
     padding-top: 0;
   }
+
+  .circle{
+    position: relative;
+    margin-top: 100px;
+  }
 }
 
 
